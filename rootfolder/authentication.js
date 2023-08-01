@@ -8,7 +8,6 @@ function loginWithSpotify() {
     window.location.href = authUrl;
 }
 
-var stupidn = "dumbfuck";
 var accessToken = window.location.hash
     .substring(1)
     .split('&')
@@ -18,9 +17,4 @@ var accessToken = window.location.hash
             initial[parts[0]] = decodeURIComponent(parts[1]);
         }
         return initial;
-    }, {}).access_token;
-
-  // Function to display the accessToken on the page
-  const accessTokenContainer = document.getElementById('access-token-container');
-  accessTokenContainer.textContent = `Access Token: ${accessToken}`;
-  
+    }, {}).access_token; 
