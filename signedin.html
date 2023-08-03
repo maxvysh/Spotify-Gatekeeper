@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>github pls update</p>
-    <div id="access-token-container"></div>
-    <img id="artist-image-0"></img>
-    <div id="artist-name-0"></div>
-    <div id="artist-popularity-0"></div>
-    <img id="artist-image-1"></img>
-    <div id="artist-name-1"></div>
-    <div id="artist-popularity-1"></div>
-    <img id="artist-image-2"></img>
-    <div id="artist-name-2"></div>
-    <div id="artist-popularity-2"></div>
-    <div id="popularity-score"></div>
+    <div class="artists">
+        <div class="artist">
+            <img id="artist-image-0"></img>
+            <div id="artist-name-0"></div>
+            <div id="artist-popularity-0"></div>
+        </div>
+        <div class="artist">
+            <img id="artist-image-1"></img>
+            <div id="artist-name-1"></div>
+            <div id="artist-popularity-1"></div>
+        </div>
+        <div class="artist">
+            <img id="artist-image-2"></img>
+            <div id="artist-name-2"></div>
+            <div id="artist-popularity-2"></div>
+        </div>
+    </div>
+    <p id="average-score">Your average popularity score is: <span id="popularity-score"></span></p>
+    <div class="progress-bar" style="--width: 0" data-label="" id="bar"></div>
+    <div id="scroll-down-container">
+        <div onclick="document.getElementById('down').scrollIntoView();" class="arrow"></div>
+    </div>
+    <div id="bottom-page-container">
+        <div id="gatekeeper-container">
+            <p id="gatekeeper-text"></p>
+        </div>
+        <div id="box"></div>
+    </div>
+    <div id="down">
+        <h1>You are down!</h1>
+    </div>
     <script src="authentication.js"></script>
     <script src="script2.js"></script>
 </body>
+
 </html>
