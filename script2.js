@@ -21,10 +21,17 @@ fetch(url, {
   document.getElementById('artist-image-2').src = data.items[2].images[0].url;
   document.getElementById('artist-popularity-2').textContent = "Popularity score: " + data.items[2].popularity;
   popularityScore = (data.items[0].popularity + data.items[1].popularity + data.items[2].popularity) / 3;
+  document.getElementById('card-image-0').src = data.items[0].images[0].url;
+  document.getElementById('card-image-1').src = data.items[1].images[0].url;
+  document.getElementById('card-image-2').src = data.items[2].images[0].url;
+  document.getElementById('card-name-0').textContent = data.items[0].name;
+  document.getElementById('card-name-1').textContent = data.items[1].name;
+  document.getElementById('card-name-2').textContent = data.items[2].name;
 }).then(function () {
   popularityScore = Math.round(popularityScore);
   document.getElementById('popularity-score').innerText = popularityScore + "/100";
   document.documentElement.style.setProperty('--maxW', popularityScore + '%');
+  document.getElementById('card-score').innerText = popularityScore;
 
   //Change the data-bars content
   const progressBar = document.getElementsByClassName('progress-bar')[0];
@@ -55,3 +62,8 @@ fetch(url, {
     document.getElementById('gatekeeper-text').textContent = "You're a true music archaeologist, digging through dusty vinyl collections, discovering lost gems and artists forgotten by time. You're like musical Indiana Jones, always one step ahead of everyone else.";
   }
 });
+
+function smoothScroll() {
+  const element = document.getElementById('down');
+  element.scrollIntoView({ behavior: 'smooth' });
+}

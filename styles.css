@@ -21,7 +21,7 @@ h1 {
     font-style: italic;
     margin-bottom: 30px;
     -webkit-text-stroke-color: beige;
-    -webkit-text-stroke-width: 0.0001rem;
+    -webkit-text-stroke-width: 0.1rem;
 }
 
 p {

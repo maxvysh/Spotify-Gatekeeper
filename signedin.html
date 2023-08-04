@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,16 +33,41 @@
     <p id="average-score">Your average popularity score is: <span id="popularity-score"></span></p>
     <div class="progress-bar" style="--width: 0" data-label="" id="bar"></div>
     <div id="scroll-down-container">
-        <div onclick="document.getElementById('down').scrollIntoView();" class="arrow"></div>
+        <div onclick="smoothScroll()" class="arrow"></div>
     </div>
     <div id="bottom-page-container">
         <div id="gatekeeper-container">
             <p id="gatekeeper-text"></p>
         </div>
-        <div id="box"></div>
+        <div id="box-container">
+            <div id="box">
+                <div id="image-container">
+                    <div class="card-artist">
+                        <img id="card-image-0"></img>
+                        <div id="card-name-0"></div>
+                    </div>
+                    <div class="card-artist">
+                        <img id="card-image-1"></img>
+                        <div id="card-name-1"></div>
+                    </div>
+                    <div class="card-artist">
+                        <img id="card-image-2"></img>
+                        <div id="card-name-2"></div>
+                    </div>
+                </div>
+                <div id="card-text">
+                    <p id="card-desc">My average artist popularity score over the last 6 months is:</p>
+                    <p id="card-score"></p>
+                </div>
+                <div id="card-link">
+                    <p id="text-link">Find yours at: maxvysh.github.io</p>
+                    <p id="link-gatekeeper">GATEKEEPER&copy;</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="down">
-        <h1>You are down!</h1>
+        <h1></h1>
     </div>
     <script src="authentication.js"></script>
     <script src="script2.js"></script>
