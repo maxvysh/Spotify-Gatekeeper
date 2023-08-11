@@ -1,1 +1,4 @@
-cool awesome
+Introducing "Gatekeeper," your personalized Spotify web app. Gatekeeper leverages the Spotify API to retrieve your top 3 artists from the past 6 months, presenting their popularity scores, a metric provided directly by Spotify. Additionally, Gatekeeper calculates the average score and offers a compact summary card with all this insightful data. Although the card is not yet implementably savable, it's a feature that's in the pipeline.
+
+*IMPORTANT*
+Please note that Gatekeeper is currently in development, according to Spotify's classification. Unfortunately, signing in isn't possible unless I manually add your Spotify-associated email to a secure registry. If you're curious and would like to explore this app, please don't hesitate to get in touch by sending an email to maxvysh@gmail.com, I would love for you to see what I have made. 
