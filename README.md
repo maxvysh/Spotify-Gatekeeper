@@ -2,3 +2,7 @@ Introducing "Gatekeeper," your personalized Spotify web app. Gatekeeper leverage
 
 *IMPORTANT*
 Please note that Gatekeeper is currently in development, according to Spotify's classification. Unfortunately, signing in isn't possible unless I manually add your Spotify-associated email to a secure registry. If you're curious and would like to explore this app, please don't hesitate to get in touch by sending an email to maxvysh@gmail.com, I would love for you to see what I have made. 
+
+![image](https://github.com/maxvysh/maxvysh.github.io/assets/45989000/6d5f7316-dd94-46c0-85bd-33a314b46d75)
+![image](https://github.com/maxvysh/maxvysh.github.io/assets/45989000/a45b1ec8-7e17-4254-876f-96effe669481)
+![image](https://github.com/maxvysh/maxvysh.github.io/assets/45989000/b7f5337a-7f96-4e34-8c55-2bb318b134dc)
