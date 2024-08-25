@@ -1,6 +1,6 @@
 function loginWithSpotify() {
     const clientId = '89fb532c08584190b4d8d6e99b5b0e23';
-    const redirectUri = 'http://maxvysh.github.io/signedin.html';
+    const redirectUri = 'https://maxvysh.github.io/Spotify-Gatekeeper/signedin.html';
     const scopes = ['user-read-private', 'user-read-email', 'user-top-read']; // Add the necessary scopes for your app
 
     const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}&response_type=token`;
